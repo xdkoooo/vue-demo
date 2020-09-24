@@ -15,5 +15,10 @@ yarn serve
 yarn build
 ```
 
+### test git branch checkout
+```
+git checkout -b xxx
+```
+
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
