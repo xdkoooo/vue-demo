@@ -43,6 +43,7 @@ export default {
     },
     methods: {
         $_loadData() {
+            // 测试防抖函数
             console.log('重新加载数据，此处需要通过函数防抖');
             // 重新加载数据，此处需要通过函数防抖
 
