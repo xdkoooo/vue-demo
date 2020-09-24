@@ -9,6 +9,7 @@ init()
 
 
 ;(function() {
+  // eruda初始化
   var src = '//cdn.jsdeliver.net/npm/eruda';
   if (!/erauda=true/.test(window.location) && localStorage.getItem('active-eruda') != 'true') return;
   document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');

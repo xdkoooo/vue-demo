@@ -5,6 +5,7 @@ import LoadingComponent from './loading.vue'
 const LoadingConstructor = Vue.extend(LoadingComponent)
 
 Vue.directive('loading', {
+    // 这是个初始化方法
     bind(el, binding) {
         const instance = new LoadingConstructor({
             el: document.createElement('div'),
