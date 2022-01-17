@@ -6,6 +6,9 @@
         <input v-model="searchValue" />
     </div>
     <!--列表，代码省略-->
+    <div style="margin-top: 20px">
+        <button ref="btn" @click="changeValue" id="firstBtn">{{msg}}</button>
+    </div>
 </div>
 </template>
 
@@ -17,7 +20,8 @@ export default {
             formData: {
                 name: '',
                 age: 0,
-            }
+            },
+            msg: '原始值'
         }
     },
     watch: {
@@ -42,6 +46,16 @@ export default {
 
     },
     methods: {
+        changeValue() {
+            console.log('changeValue--this:', this);
+            this.msg = "修改后的值"
+            // console.log(this.$refs.btn.innerText);
+
+            this.$nextTick(() => {
+                console.log('callback--this:', this);
+                console.log(this.$refs.btn.innerText);
+            })
+        },
         $_loadData() {
             // 测试防抖函数
             console.log('重新加载数据，此处需要通过函数防抖');

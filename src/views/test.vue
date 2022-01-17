@@ -7,6 +7,7 @@
 <script>
 import Loading from '../components/loading/index'
 import Empty from '../components/empty/empty'
+
 export default {
     name: 'test',
     components: {

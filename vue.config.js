@@ -7,5 +7,11 @@ module.exports = {
         resolve: {
             symlinks: true,
         }
-    }
+    },
+    css: {
+        loaderOptions: {
+            sass: {
+            }
+        }
+    },
 }

@@ -3,7 +3,11 @@ import App from './App.vue'
 import router from './router'
 import { init, bind } from './utils/custom-life-cycle'
 
+import api from './api'
+
 Vue.config.productionTip = false
+
+Vue.prototype.$api = api;
 
 init()
 

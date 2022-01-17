@@ -1,6 +1,7 @@
 import VueRouter from 'vue-router';
 import Vue from 'vue'
 import Home from '../views/home';
+import Poster from '../views/poster.vue'
 
 
 Vue.use(VueRouter);
@@ -18,6 +19,11 @@ const routes = [
         meta: { title: 'home' }
     },
     {
+        path: '/poster',
+        component: Poster,
+        meta: { title: 'poster' }
+    },
+    {
         path: '/test',
         component: () => import('../views/test'),
         meta: { title: 'test' }
@@ -26,6 +32,16 @@ const routes = [
         path: '/watch',
         component: () => import('../views/watch'),
         meta: { title: 'watch' }
+    },
+    {
+        path: '/vmodel',
+        component: () => import('../views/vmodel'),
+        meta: { title: 'vmodel' }
+    },
+    {
+        path: '/next-tick',
+        component: () => import('../views/next-tick'),
+        meta: { title: 'nexttick' }
     }
 ]
 
