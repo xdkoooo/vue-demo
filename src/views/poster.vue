@@ -60,7 +60,8 @@ export default {
         video.setAttribute("crossOrigin", "Anonymous");
         video.src = item.src;
         //如果不设置currentTime，画出来的图片是空的
-        video.currentTime = 0.001;
+        // video.currentTime = 0.001;
+        video.currentTime = 5;
         video.onloadeddata = loadedmetadata;
 
         function loadedmetadata(e) {

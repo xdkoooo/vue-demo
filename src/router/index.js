@@ -42,6 +42,16 @@ const routes = [
         path: '/next-tick',
         component: () => import('../views/next-tick'),
         meta: { title: 'nexttick' }
+    },
+    {
+        path: '/audio-test',
+        component: () => import('../views/audio-test'),
+        meta: { title: 'audioTest' }
+    },
+    {
+        path: '/audio-dom',
+        component: () => import('../views/audio-dom'),
+        meta: { title: 'audio-dom' }
     }
 ]
 
