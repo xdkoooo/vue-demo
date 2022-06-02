@@ -52,6 +52,16 @@ const routes = [
         path: '/audio-dom',
         component: () => import('../views/audio-dom'),
         meta: { title: 'audio-dom' }
+    },
+    {
+        path: '/codemirror_editor',
+        component: () => import('../views/codemirror'),
+        meta: { title: 'codemirror_editor' }
+    },
+    {
+        path: '/ace_editor',
+        component: () => import('../views/aceeditor'),
+        meta: { title: 'ace_editor' }
     }
 ]
 
